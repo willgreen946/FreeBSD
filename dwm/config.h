@@ -67,7 +67,7 @@ static const char *browser[]  = { "vimb", "searx.org", NULL };
 static const char *network[]  = { "wifimgr", NULL };
 static const char *filemanager[] = { "xterm", "vifm", NULL };
 static const char *htop[] = { "xterm", "htop", NULL };
-
+static const char *vim[] = { "xterm", "vim", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -77,6 +77,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_w,	   spawn,	   {.v = network } },
 	{ MODKEY,			XK_f,	   spawn,	   {.v = filemanager } },
 	{ MODKEY,			XK_m,	   spawn,	   {.v = htop } },
+	{ MODKEY,			XK_v,	   spawn,	   {.v = vim } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
