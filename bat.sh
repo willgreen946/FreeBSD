@@ -1,5 +1,5 @@
 while true
 do
-	xsetroot -name "$(acpiconf -i 0 | grep %)"
+	xsetroot -name "$(date && acpiconf -i 0 | grep %)"
 	sleep 120
 done
